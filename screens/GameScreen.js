@@ -4,6 +4,7 @@ import {
   Alert,
   FlatList,
   useWindowDimensions,
+  Platform,
 } from "react-native";
 import { useEffect, useState } from "react";
 import Title from "../components/ui/Title";
@@ -152,6 +153,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 24,
+    marginTop: Platform.select({ ios: 0, android: 8 }),
     alignItems: "center",
   },
   instructionText: {
