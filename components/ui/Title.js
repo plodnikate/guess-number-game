@@ -16,6 +16,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 8,
     marginBottom: 16,
+    maxWidth: "80%",
+    width: 300,
   },
 });
 
